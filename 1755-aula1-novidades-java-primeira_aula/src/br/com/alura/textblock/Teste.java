@@ -13,7 +13,7 @@ public class Teste {
 				+ "non proident, sunt in culpa qui officia deserunt \n" + "mollit anim id est laborum.\"";
 //		System.out.println(texto);
 		
-	// Novidade do java 15 Text Blocks	
+	// Novidade do java 15 Text Blocks			
 //		String textoLongoFormatado = """
 //				Lorem ipsum dolor sit amet, 
 //				consectetur adipiscing elit, sed do eiusmod tempor 
