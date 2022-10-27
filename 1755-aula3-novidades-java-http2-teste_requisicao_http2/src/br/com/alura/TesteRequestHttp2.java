@@ -14,12 +14,12 @@ public class TesteRequestHttp2 {
 	public static void main(String[] args) throws URISyntaxException, IOException, InterruptedException {
 
 		HttpClient httpClient = HttpClient.newHttpClient();
-		HttpRequest httpRequest = HttpRequest.newBuilder(new URI("https://www.casadocodigo.com.br"))
-				.GET().build();
-		HttpResponse<String> response = httpClient.send(httpRequest, BodyHandlers.ofString());
-		
-		System.out.println(response.statusCode());
-//		System.out.println(response.body());
-		System.out.println(response.version());
+		HttpRequest httpRequest = HttpRequest.newBuilder(new URI("https://www.casadocodigo.com.br")).GET().build();
+		HttpResponse<String> resp = httpClient.send(httpRequest, BodyHandlers.ofString());
+
+		System.out.println(resp.statusCode());
+		System.out.println(resp.body());
+		System.out.println(resp.version());
+
 	}
 }
